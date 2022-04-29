@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Het Patel</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/tutorials.css" />
+    <link rel="stylesheet" href="../static/css/about.css" />
+    <link rel="stylesheet" href="../static/css/pdf.css" />
+    <link rel="stylesheet" href="../static/css/tutorials.css" />
+  </head>
+  <body>
+    <nav class="navbar navh-resp" style="background-color: lightgrey">
+      <ul class="navlist visible-resp">
+        <div class="logo">
+          <img
+            src="../static/images/Bootstrap 4 – Responsive Web Design.png"
+            alt="logo"
+          />
+        </div>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/tutorials">Tutorials</a>
+        </li>
+        <li>
+          <a href="/contact">Contact us</a>
+        </li>
+        <li><a href="/pdf">PDF</a></li>
+      </ul>
+      <div class="rightnav visible-resp">
+        <input type="text" name="search" id="search" placeholder="search" />
+        <button class="btnsm">search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <section class="background firstsection" id="Home">
+      <div class="boxmain">
+        <div class="firsthalf">
+          <p class="textbig" id="intro1">Welcome to the Online Learning.</p>
+          <p class="textsm" id="intro2">
+            Python and java are most famous and high demanded languages. if you
+            want to learn them here we provide quick links for them,and if you
+            want Other languages then and click on
+            <a href="/tutorials" style="color: cyan; text-decoration: none"
+              >Tutorials</a
+            >.
+          </p>
+
+          <div class="buttons">
+            <a
+              href="https://www.youtube.com/watch?v=aqvDTCpNRek&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME"
+              target="_blank"
+              ><button class="btn">Python</button></a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=ntLJmHOJ0ME&list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q"
+              target="_blank"
+              ><button class="btn">Java</button></a
+            >
+          </div>
+        </div>
+        <div class="secondhalf">
+          <img src="../static/images/laptop.jpg" alt="laptop image" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="text-foot">Copyright &copy; 2020 - All rights reserved</p>
+    </footer>
+
+    <script src="../static/js/resp.js"></script>
+  </body>
+</html>

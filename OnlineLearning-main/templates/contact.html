@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/tutorials.css" />
+    <link rel="stylesheet" href="../static/css/about.css" />
+    <link rel="stylesheet" href="../static/css/pdf.css" />
+    <link rel="stylesheet" href="../static/css/tutorials.css" />
+  </head>
+  <body>
+    <nav class="navbar navh-resp" style="background-color: lightgrey">
+      <ul class="navlist visible-resp">
+        <div class="logo">
+          <img
+            src="../static/images/Bootstrap 4 – Responsive Web Design.png"
+            alt="logo"
+          />
+        </div>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/tutorials">Tutorials</a>
+        </li>
+        <li>
+          <a href="/contact">Contact us</a>
+        </li>
+        <li><a href="/pdf">PDF</a></li>
+      </ul>
+      <div class="rightnav visible-resp">
+        <input type="text" name="search" id="search" placeholder="search" />
+        <button class="btnsm">search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <div style="background-color: red">
+      <form class="contact" id="contact">
+        <h2 class="text">Contact Us</h2>
+        <div class="form">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Username"
+          />
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <input
+            class="form-input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+          />
+          <input
+            class="form-input"
+            type="tel"
+            name="pin"
+            id="pin"
+            placeholder="PIN code"
+          />
+          <input
+            class="form-input"
+            type="text"
+            name="country"
+            id="country"
+            placeholder="Country"
+          />
+          <textarea
+            class="form-input"
+            cols="30"
+            name="message"
+            id="message"
+            rows="10"
+            placeholder="Enter text"
+          ></textarea>
+          <button class="btn btn8" type="submit" id="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p class="text-foot">Copyright &copy; 2020 - All rights reserved</p>
+    </footer>
+    <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        alert("your response submitted");
+        location.reload();
+      });
+    </script>
+    <script src="../static/js/resp.js"></script>
+  </body>
+</html>

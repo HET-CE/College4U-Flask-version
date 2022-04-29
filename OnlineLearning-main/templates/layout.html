@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/tutorials.css" />
+    <link rel="stylesheet" href="../static/css/about.css" />
+    <link rel="stylesheet" href="../static/css/pdf.css" />
+    <link rel="stylesheet" href="../static/css/tutorials.css" />
+  </head>
+  <body>
+    <nav class="navbar navh-resp" style="background-color: lightgrey">
+      <ul class="navlist visible-resp">
+        <div class="logo">
+          <img
+            src="../static/images/Bootstrap 4 – Responsive Web Design.png"
+            alt="logo"
+          />
+        </div>
+        <li><a href="/">Home</a></li>
+        <li><a href="/tutorials">Tutorials</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/pdf">PDF</a></li>
+      </ul>
+      <div class="rightnav visible-resp">
+        <input type="text" name="search" id="search" placeholder="search" />
+        <button class="btnsm">search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    {% block body %} {% endblock %}
+
+    <footer>
+      <p class="text-foot">Copyright &copy; 2020 - All rights reserved</p>
+    </footer>
+
+    <script src="../static/js/resp.js"></script>
+  </body>
+</html>
